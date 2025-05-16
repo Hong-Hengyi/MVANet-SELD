@@ -4,7 +4,7 @@ For more detailed information, please refer to the paper titled "MVANet: Multi-S
 ## Installation Guide
 
 ```python
-cd MVANet
+cd MVANet-SELD
 pip install -r requirements.txt
 ```
 
