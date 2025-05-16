@@ -20,7 +20,7 @@ train:
   train_num_workers: 8
   test_num_workers: 4
   lr: 0.00075
-  nb_steps: 11000
+  nb_steps: 13000
 
 result:
   log_output_path: '../MVANet_result/train.log'
