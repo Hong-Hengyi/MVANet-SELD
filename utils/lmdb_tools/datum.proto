@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SimpleDatum{
+    required bytes data = 1;
+    optional bytes label = 2;
+    optional int32 data_dim = 3;
+    optional int32 label_dim = 4;
+    optional bytes wave_name = 5;
+}

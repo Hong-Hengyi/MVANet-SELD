@@ -1,0 +1,29 @@
+data:
+  train_lmdb_dir: '../DCASE2024_SELD_dataset/seld_feat_label/foa_dev_lmdb' 
+  test_lmdb_dir: '../DCASE2024_SELD_dataset/seld_feat_label/foa_dev_lmdb' 
+  ref_files_dir: '...' # fold4 label files
+  norm_file: '../DCASE2024_SELD_dataset/seld_feat_label/foa_wts' # normalization file
+  segment_len: 100
+  batch_size: 32
+  train_ignore: 'enh' # or None. 'enh' means ignore the enhancement data
+  test_ignore: 'enh'
+
+model:
+  in_channel: 7
+  in_dim: 64
+  out_dim: 39
+  # 'early_manifold'
+  pre-train: False
+  pre-train_model: ''
+
+train:
+  train_num_workers: 8
+  test_num_workers: 4
+  lr: 0.00075
+  nb_steps: 11000
+
+result:
+  log_output_path: '../MVANet_result/train.log'
+  log_interval: 100
+  checkpoint_output_dir: '../MVANet_result/checkpoints'
+  dcase_output_dir: '../MVANet_result/results'
