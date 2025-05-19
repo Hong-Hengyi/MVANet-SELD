@@ -8,6 +8,12 @@ cd MVANet-SELD
 pip install -r requirements.txt
 ```
 
+## Data
+
+```python
+https://pan.baidu.com/s/1i4xyp2SSq6OOJnn81aRW3A?pwd=1234
+```
+
 ## Extract Audio-Visual Features
 
 Change dataset path and feature path in `utils/cls_tools/parameters.py` script
